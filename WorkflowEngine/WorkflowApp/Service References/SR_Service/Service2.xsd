@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/DAL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DAL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:1989/02 Workflow Enginee/WorkflowEngine/GateWay/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ArrayOflkup_JobTitle">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="lkup_JobTitle" nillable="true" type="tns:lkup_JobTitle" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOflkup_JobTitle" nillable="true" type="tns:ArrayOflkup_JobTitle" />
+  <xs:complexType name="lkup_JobTitle">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreatedBy" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="CreationDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Id" type="ser:guid" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ModificationDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModifiedBy" nillable="true" type="ser:guid" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="lkup_JobTitle" nillable="true" type="tns:lkup_JobTitle" />
+</xs:schema>

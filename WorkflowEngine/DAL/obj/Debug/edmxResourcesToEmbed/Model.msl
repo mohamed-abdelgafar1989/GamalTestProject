@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="StepPointWFModelStoreContainer" CdmEntityContainer="StepPointWFEntities">
+    <EntitySetMapping Name="Action_SecurityRole_MailTemplate">
+      <EntityTypeMapping TypeName="StepPointWFModel.Action_SecurityRole_MailTemplate">
+        <MappingFragment StoreEntitySet="Action_SecurityRole_MailTemplate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+          <ScalarProperty Name="SecurityRoleId" ColumnName="SecurityRoleId" />
+          <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Action_Step_MailTemplate">
+      <EntityTypeMapping TypeName="StepPointWFModel.Action_Step_MailTemplate">
+        <MappingFragment StoreEntitySet="Action_Step_MailTemplate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ActionId" ColumnName="ActionId" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="TemplateId" ColumnName="TemplateId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ActionsNotification">
+      <EntityTypeMapping TypeName="StepPointWFModel.ActionsNotification">
+        <MappingFragment StoreEntitySet="ActionsNotification">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DefaultMailTemplateId" ColumnName="DefaultMailTemplateId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Condtion">
+      <EntityTypeMapping TypeName="StepPointWFModel.Condtion">
+        <MappingFragment StoreEntitySet="Condtion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StepRequiredItemId" ColumnName="StepRequiredItemId" />
+          <ScalarProperty Name="MatchingCritriaId" ColumnName="MatchingCritriaId" />
+          <ScalarProperty Name="MatchingValue_Number" ColumnName="MatchingValue_Number" />
+          <ScalarProperty Name="MatchingValue_Lookup" ColumnName="MatchingValue_Lookup" />
+          <ScalarProperty Name="MatchingValue_Text" ColumnName="MatchingValue_Text" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomFieldType">
+      <EntityTypeMapping TypeName="StepPointWFModel.CustomFieldType">
+        <MappingFragment StoreEntitySet="CustomFieldType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DelegationScope">
+      <EntityTypeMapping TypeName="StepPointWFModel.DelegationScope">
+        <MappingFragment StoreEntitySet="DelegationScope">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlowLogic">
+      <EntityTypeMapping TypeName="StepPointWFModel.FlowLogic">
+        <MappingFragment StoreEntitySet="FlowLogic">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CurrentStepId" ColumnName="CurrentStepId" />
+          <ScalarProperty Name="NextStepId" ColumnName="NextStepId" />
+          <ScalarProperty Name="CompletionStatusId" ColumnName="CompletionStatusId" />
+          <ScalarProperty Name="CommentIsRequired" ColumnName="CommentIsRequired" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlowLogic_Condtion">
+      <EntityTypeMapping TypeName="StepPointWFModel.FlowLogic_Condtion">
+        <MappingFragment StoreEntitySet="FlowLogic_Condtion">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CondtionId" ColumnName="CondtionId" />
+          <ScalarProperty Name="FlowLogicId" ColumnName="FlowLogicId" />
+          <ScalarProperty Name="PathId" ColumnName="PathId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FlowLogicRequiredItem">
+      <EntityTypeMapping TypeName="StepPointWFModel.FlowLogicRequiredItem">
+        <MappingFragment StoreEntitySet="FlowLogicRequiredItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LogicRecordId" ColumnName="LogicRecordId" />
+          <ScalarProperty Name="CompletedItemId" ColumnName="CompletedItemId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemSubmittionHistory">
+      <EntityTypeMapping TypeName="StepPointWFModel.ItemSubmittionHistory">
+        <MappingFragment StoreEntitySet="ItemSubmittionHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="SubmittedItemId" ColumnName="SubmittedItemId" />
+          <ScalarProperty Name="HistoryRecordId" ColumnName="HistoryRecordId" />
+          <ScalarProperty Name="SubmittionDate" ColumnName="SubmittionDate" />
+          <ScalarProperty Name="SubmittionStatusId" ColumnName="SubmittionStatusId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_DelegationStatus">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_DelegationStatus">
+        <MappingFragment StoreEntitySet="lkup_DelegationStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_Group">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_Group">
+        <MappingFragment StoreEntitySet="lkup_Group">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_JobTitle">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_JobTitle">
+        <MappingFragment StoreEntitySet="lkup_JobTitle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_Language">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_Language">
+        <MappingFragment StoreEntitySet="lkup_Language">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_LookupList">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_LookupList">
+        <MappingFragment StoreEntitySet="lkup_LookupList">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_LookUpListValue">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_LookUpListValue">
+        <MappingFragment StoreEntitySet="lkup_LookUpListValue">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="LookupListId" ColumnName="LookupListId" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_MailTemplate">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_MailTemplate">
+        <MappingFragment StoreEntitySet="lkup_MailTemplate">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_MatchingCritria">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_MatchingCritria">
+        <MappingFragment StoreEntitySet="lkup_MatchingCritria">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_Path">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_Path">
+        <MappingFragment StoreEntitySet="lkup_Path">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_Phase">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_Phase">
+        <MappingFragment StoreEntitySet="lkup_Phase">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_RequiredItemType">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_RequiredItemType">
+        <MappingFragment StoreEntitySet="lkup_RequiredItemType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_SecurityRole">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_SecurityRole">
+        <MappingFragment StoreEntitySet="lkup_SecurityRole">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="VisibleInSM" ColumnName="VisibleInSM" />
+          <ScalarProperty Name="DefaultUserId" ColumnName="DefaultUserId" />
+          <ScalarProperty Name="DefautOwnerRoleId" ColumnName="DefautOwnerRoleId" />
+          <ScalarProperty Name="StakeHolder" ColumnName="StakeHolder" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_Status">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_Status">
+        <MappingFragment StoreEntitySet="lkup_Status">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_StepType">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_StepType">
+        <MappingFragment StoreEntitySet="lkup_StepType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="InProgressStatusId" ColumnName="InProgressStatusId" />
+          <ScalarProperty Name="NotStartedStatusId" ColumnName="NotStartedStatusId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_SubmittionStatus">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_SubmittionStatus">
+        <MappingFragment StoreEntitySet="lkup_SubmittionStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="IndicatorImage" ColumnName="IndicatorImage" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="lkup_TimeOutStatus">
+      <EntityTypeMapping TypeName="StepPointWFModel.lkup_TimeOutStatus">
+        <MappingFragment StoreEntitySet="lkup_TimeOutStatus">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Object_StepRequiredItem">
+      <EntityTypeMapping TypeName="StepPointWFModel.Object_StepRequiredItem">
+        <MappingFragment StoreEntitySet="Object_StepRequiredItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StepRequiredItemId" ColumnName="StepRequiredItemId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="AttchamentId" ColumnName="AttchamentId" />
+          <ScalarProperty Name="Text_Value" ColumnName="Text_Value" />
+          <ScalarProperty Name="NText_Value" ColumnName="NText_Value" />
+          <ScalarProperty Name="Number_Value" ColumnName="Number_Value" />
+          <ScalarProperty Name="LookupListValueId" ColumnName="LookupListValueId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObjectInstanceData">
+      <EntityTypeMapping TypeName="StepPointWFModel.ObjectInstanceData">
+        <MappingFragment StoreEntitySet="ObjectInstanceData">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkFlowId" ColumnName="WorkFlowId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObjectInstanceData_CurrentSteps">
+      <EntityTypeMapping TypeName="StepPointWFModel.ObjectInstanceData_CurrentSteps">
+        <MappingFragment StoreEntitySet="ObjectInstanceData_CurrentSteps">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CurrentStepId" ColumnName="CurrentStepId" />
+          <ScalarProperty Name="WFInstanceID" ColumnName="WFInstanceID" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObjectStepHistory">
+      <EntityTypeMapping TypeName="StepPointWFModel.ObjectStepHistory">
+        <MappingFragment StoreEntitySet="ObjectStepHistory">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="CompletionDate" ColumnName="CompletionDate" />
+          <ScalarProperty Name="LastModifiedDate" ColumnName="LastModifiedDate" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="OriginalOwnerId" ColumnName="OriginalOwnerId" />
+          <ScalarProperty Name="ActorId" ColumnName="ActorId" />
+          <ScalarProperty Name="IsCompleted" ColumnName="IsCompleted" />
+          <ScalarProperty Name="ActorIsDelegate" ColumnName="ActorIsDelegate" />
+          <ScalarProperty Name="FinishVariance" ColumnName="FinishVariance" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ObjectTypeWorkflow">
+      <EntityTypeMapping TypeName="StepPointWFModel.ObjectTypeWorkflow">
+        <MappingFragment StoreEntitySet="ObjectTypeWorkflow">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ObjectTypeId" ColumnName="ObjectTypeId" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SecurityMatrix">
+      <EntityTypeMapping TypeName="StepPointWFModel.SecurityMatrix">
+        <MappingFragment StoreEntitySet="SecurityMatrix">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="SecurityRoleId" ColumnName="SecurityRoleId" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Active" ColumnName="Active" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Step">
+      <EntityTypeMapping TypeName="StepPointWFModel.Step">
+        <MappingFragment StoreEntitySet="Step">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="PhaseId" ColumnName="PhaseId" />
+          <ScalarProperty Name="StepTypeId" ColumnName="StepTypeId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Numbering" ColumnName="Numbering" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="SecurityRoleId" ColumnName="SecurityRoleId" />
+          <ScalarProperty Name="TimeOutDuration" ColumnName="TimeOutDuration" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Step_StepRequiredItem">
+      <EntityTypeMapping TypeName="StepPointWFModel.Step_StepRequiredItem">
+        <MappingFragment StoreEntitySet="Step_StepRequiredItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="StepRequiredItemId" ColumnName="StepRequiredItemId" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StepCompletedItemHistory">
+      <EntityTypeMapping TypeName="StepPointWFModel.StepCompletedItemHistory">
+        <MappingFragment StoreEntitySet="StepCompletedItemHistory">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HistoryRecordId" ColumnName="HistoryRecordId" />
+          <ScalarProperty Name="CompletedItemId" ColumnName="CompletedItemId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StepRequiredItem">
+      <EntityTypeMapping TypeName="StepPointWFModel.StepRequiredItem">
+        <MappingFragment StoreEntitySet="StepRequiredItem">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RequiredItemTypeId" ColumnName="RequiredItemTypeId" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="CustomFieldTypeId" ColumnName="CustomFieldTypeId" />
+          <ScalarProperty Name="LookUpListId" ColumnName="LookUpListId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StepType_Status">
+      <EntityTypeMapping TypeName="StepPointWFModel.StepType_Status">
+        <MappingFragment StoreEntitySet="StepType_Status">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StepTypeId" ColumnName="StepTypeId" />
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workflow">
+      <EntityTypeMapping TypeName="StepPointWFModel.Workflow">
+        <MappingFragment StoreEntitySet="Workflow">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="LanguageId" ColumnName="LanguageId" />
+          <ScalarProperty Name="DisableUpcomingForms" ColumnName="DisableUpcomingForms" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Workflow_Attachment">
+      <EntityTypeMapping TypeName="StepPointWFModel.Workflow_Attachment">
+        <MappingFragment StoreEntitySet="Workflow_Attachment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="AttachmentId" ColumnName="AttachmentId" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowComment">
+      <EntityTypeMapping TypeName="StepPointWFModel.WorkflowComment">
+        <MappingFragment StoreEntitySet="WorkflowComment">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="SerialNumber" ColumnName="SerialNumber" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="WorkflowDelegation">
+      <EntityTypeMapping TypeName="StepPointWFModel.WorkflowDelegation">
+        <MappingFragment StoreEntitySet="WorkflowDelegation">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="DelegationScopeId" ColumnName="DelegationScopeId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="FinishDate" ColumnName="FinishDate" />
+          <ScalarProperty Name="DelegateUserId" ColumnName="DelegateUserId" />
+          <ScalarProperty Name="DelegationStatusId" ColumnName="DelegationStatusId" />
+          <ScalarProperty Name="ActionByUserId" ColumnName="ActionByUserId" />
+          <ScalarProperty Name="ActionDate" ColumnName="ActionDate" />
+          <ScalarProperty Name="ExpiryDate" ColumnName="ExpiryDate" />
+          <ScalarProperty Name="TimeOutDuration" ColumnName="TimeOutDuration" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="ActionsNotification_GetById" FunctionName="StepPointWFModel.Store.ActionsNotification_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.ActionsNotification_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="MailTemplateId" ColumnName="MailTemplateId" />
+          <ScalarProperty Name="SecurityRoleId" ColumnName="SecurityRoleId" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Attachment_GetById" FunctionName="StepPointWFModel.Store.Attachment_GetById">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.Attachment_GetById_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Condtion_GetByStepRequiredItemId" FunctionName="StepPointWFModel.Store.Condtion_GetByStepRequiredItemId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.Condtion_GetByStepRequiredItemId_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StepRequiredItemId" ColumnName="StepRequiredItemId" />
+          <ScalarProperty Name="MatchingCritriaId" ColumnName="MatchingCritriaId" />
+          <ScalarProperty Name="MatchingValue_Number" ColumnName="MatchingValue_Number" />
+          <ScalarProperty Name="MatchingValue_Lookup" ColumnName="MatchingValue_Lookup" />
+          <ScalarProperty Name="MatchingValue_Text" ColumnName="MatchingValue_Text" />
+          <ScalarProperty Name="MatchingCritria" ColumnName="MatchingCritria" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="lkup_StepType_GetAllData" FunctionName="StepPointWFModel.Store.lkup_StepType_GetAllData">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.lkup_StepType_GetAllData_Result">
+          <ScalarProperty Name="StatusId" ColumnName="StatusId" />
+          <ScalarProperty Name="StatusName" ColumnName="StatusName" />
+          <ScalarProperty Name="InProgressStatusId" ColumnName="InProgressStatusId" />
+          <ScalarProperty Name="NotStartedStatusId" ColumnName="NotStartedStatusId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Object_StepRequiredItem_GetbyObjectId" FunctionName="StepPointWFModel.Store.Object_StepRequiredItem_GetbyObjectId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.Object_StepRequiredItem_GetbyObjectId_Result">
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="StepName" ColumnName="StepName" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="PhaseId" ColumnName="PhaseId" />
+          <ScalarProperty Name="StepTypeId" ColumnName="StepTypeId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Numbering" ColumnName="Numbering" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="SecurityRoleId" ColumnName="SecurityRoleId" />
+          <ScalarProperty Name="TimeOutDuration" ColumnName="TimeOutDuration" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TM_GetCFInfo" FunctionName="StepPointWFModel.Store.TM_GetCFInfo">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.TM_GetCFInfo_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RequiredItemTypeId" ColumnName="RequiredItemTypeId" />
+          <ScalarProperty Name="RequiredItemTypeName" ColumnName="RequiredItemTypeName" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="CustomFieldTypeId" ColumnName="CustomFieldTypeId" />
+          <ScalarProperty Name="CustomFieldTypeName" ColumnName="CustomFieldTypeName" />
+          <ScalarProperty Name="LookUpListId" ColumnName="LookUpListId" />
+          <ScalarProperty Name="LookUpListName" ColumnName="LookUpListName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TM_GetCustomFieldValue" FunctionName="StepPointWFModel.Store.TM_GetCustomFieldValue">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.TM_GetCustomFieldValue_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StepRequiredItemId" ColumnName="StepRequiredItemId" />
+          <ScalarProperty Name="ObjectId" ColumnName="ObjectId" />
+          <ScalarProperty Name="Url" ColumnName="Url" />
+          <ScalarProperty Name="AttchamentId" ColumnName="AttchamentId" />
+          <ScalarProperty Name="Text_Value" ColumnName="Text_Value" />
+          <ScalarProperty Name="NText_Value" ColumnName="NText_Value" />
+          <ScalarProperty Name="Number_Value" ColumnName="Number_Value" />
+          <ScalarProperty Name="LookupListValueId" ColumnName="LookupListValueId" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TM_GetListValues" FunctionName="StepPointWFModel.Store.TM_GetListValues">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.TM_GetListValues_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Value" ColumnName="Value" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Attachment">
+      <EntityTypeMapping TypeName="StepPointWFModel.Attachment">
+        <MappingFragment StoreEntitySet="Attachment">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="Extension" ColumnName="Extension" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="StepPointWFModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="ModificationDate" ColumnName="ModificationDate" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="JobTitleId" ColumnName="JobTitleId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="GroupId" ColumnName="GroupId" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="Username" ColumnName="Username" />
+          <ScalarProperty Name="IsAD" ColumnName="IsAD" />
+          <ScalarProperty Name="DateOfBirth" ColumnName="DateOfBirth" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="TM_GetWFStepRequiredItems" FunctionName="StepPointWFModel.Store.TM_GetWFStepRequiredItems">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.TM_GetWFStepRequiredItems_Result">
+          <ScalarProperty Name="S_SRI_Id" ColumnName="S_SRI_Id" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="StepRequiredItemId" ColumnName="StepRequiredItemId" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="SRIName" ColumnName="SRIName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="TM_StepRequiredItem_GetbyObjectId" FunctionName="StepPointWFModel.Store.TM_StepRequiredItem_GetbyObjectId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.TM_StepRequiredItem_GetbyObjectId_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="StepId" ColumnName="StepId" />
+          <ScalarProperty Name="StepRequiredItemId" ColumnName="StepRequiredItemId" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="RequiredItemURL" ColumnName="RequiredItemURL" />
+          <ScalarProperty Name="AttchamentId" ColumnName="AttchamentId" />
+          <ScalarProperty Name="Text_Value" ColumnName="Text_Value" />
+          <ScalarProperty Name="NText_Value" ColumnName="NText_Value" />
+          <ScalarProperty Name="Number_Value" ColumnName="Number_Value" />
+          <ScalarProperty Name="LookupListValueId" ColumnName="LookupListValueId" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Step_GetByWorkflowId" FunctionName="StepPointWFModel.Store.Step_GetByWorkflowId">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="StepPointWFModel.Step_GetByWorkflowId_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="WorkflowId" ColumnName="WorkflowId" />
+          <ScalarProperty Name="PhaseId" ColumnName="PhaseId" />
+          <ScalarProperty Name="StepTypeId" ColumnName="StepTypeId" />
+          <ScalarProperty Name="ParentId" ColumnName="ParentId" />
+          <ScalarProperty Name="Numbering" ColumnName="Numbering" />
+          <ScalarProperty Name="Order" ColumnName="Order" />
+          <ScalarProperty Name="SecurityRoleId" ColumnName="SecurityRoleId" />
+          <ScalarProperty Name="TimeOutDuration" ColumnName="TimeOutDuration" />
+          <ScalarProperty Name="PhaseName" ColumnName="PhaseName" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

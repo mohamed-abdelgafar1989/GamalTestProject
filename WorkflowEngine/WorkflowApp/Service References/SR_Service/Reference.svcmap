@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="016acb32-4543-49ae-992b-ed3dbfe17ffe" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:1989/02 Workflow Enginee/WorkflowEngine/GateWay/Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="b541f4ae-96fd-47da-98d1-e2a2ef4f89d1" SourceId="1" SourceUrl="http://localhost:1989/02 Workflow Enginee/WorkflowEngine/GateWay/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service1.xsd" MetadataType="Schema" ID="4a48bab5-1c11-463b-8cc1-1bf83d7c3aa4" SourceId="1" SourceUrl="http://localhost:1989/02 Workflow Enginee/WorkflowEngine/GateWay/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service2.xsd" MetadataType="Schema" ID="e421f071-cb0f-4011-b088-051c47c7884c" SourceId="1" SourceUrl="http://localhost:1989/02 Workflow Enginee/WorkflowEngine/GateWay/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service3.xsd" MetadataType="Schema" ID="05b79121-a57a-435c-9ef5-912bac4844b9" SourceId="1" SourceUrl="http://localhost:1989/02 Workflow Enginee/WorkflowEngine/GateWay/Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="Service.disco" MetadataType="Disco" ID="a322c07b-3bf6-4402-b07f-aa2018c7c777" SourceId="1" SourceUrl="http://localhost:1989/02 Workflow Enginee/WorkflowEngine/GateWay/Service.svc?disco" />
+    <MetadataFile FileName="Service.wsdl" MetadataType="Wsdl" ID="608fc3a1-b864-4edb-811f-7f015271b5d7" SourceId="1" SourceUrl="http://localhost:1989/02 Workflow Enginee/WorkflowEngine/GateWay/Service.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

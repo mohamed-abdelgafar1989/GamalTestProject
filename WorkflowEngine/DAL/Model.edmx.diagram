@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="75d1aac9435843ffb23341efb7c294dc" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="StepPointWFModel.Action_SecurityRole_MailTemplate" Width="1.5" PointX="13.5" PointY="53.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.Action_Step_MailTemplate" Width="1.5" PointX="10.5" PointY="56.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.ActionsNotification" Width="1.5" PointX="8.25" PointY="31.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.Condtion" Width="1.5" PointX="12.75" PointY="76.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.CustomFieldType" Width="1.5" PointX="8.25" PointY="35.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.DelegationScope" Width="1.5" PointX="8.25" PointY="39.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.FlowLogic" Width="1.5" PointX="13.5" PointY="94" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.FlowLogic_Condtion" Width="1.5" PointX="15.75" PointY="79.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.FlowLogicRequiredItem" Width="1.5" PointX="8.25" PointY="55.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.ItemSubmittionHistory" Width="1.5" PointX="8.25" PointY="58.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_DelegationStatus" Width="1.5" PointX="8.25" PointY="63" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_Group" Width="1.5" PointX="0.75" PointY="73" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_JobTitle" Width="1.5" PointX="8.25" PointY="66.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_Language" Width="1.5" PointX="8.25" PointY="75.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_LookupList" Width="1.5" PointX="8.25" PointY="78.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_LookUpListValue" Width="1.5" PointX="10.5" PointY="73.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_MailTemplate" Width="1.5" PointX="8.25" PointY="82.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_MatchingCritria" Width="1.5" PointX="8.25" PointY="91.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_Path" Width="1.5" PointX="8.25" PointY="94.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_Phase" Width="1.5" PointX="13.5" PointY="107" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_RequiredItemType" Width="1.5" PointX="8.25" PointY="102.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_SecurityRole" Width="1.5" PointX="8.25" PointY="114.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_Status" Width="1.5" PointX="8.25" PointY="118.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_StepType" Width="1.5" PointX="8.25" PointY="123" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_SubmittionStatus" Width="1.5" PointX="8.25" PointY="127.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.lkup_TimeOutStatus" Width="1.5" PointX="8.25" PointY="131.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.Object_StepRequiredItem" Width="1.5" PointX="12.75" PointY="65.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.ObjectInstanceData" Width="1.5" PointX="13.5" PointY="102.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.ObjectInstanceData_CurrentSteps" Width="1.5" PointX="8.25" PointY="134.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.ObjectStepHistory" Width="1.5" PointX="18" PointY="103" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.ObjectTypeWorkflow" Width="1.5" PointX="8.25" PointY="138.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.SecurityMatrix" Width="1.5" PointX="3" PointY="72.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.Step" Width="1.5" PointX="15.75" PointY="102.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.Step_StepRequiredItem" Width="1.5" PointX="12.75" PointY="71.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.StepCompletedItemHistory" Width="1.5" PointX="20.25" PointY="84.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.StepRequiredItem" Width="1.5" PointX="10.5" PointY="68.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.StepType_Status" Width="1.5" PointX="10.5" PointY="121.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.Workflow" Width="1.5" PointX="8.25" PointY="142.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.Workflow_Attachment" Width="1.5" PointX="10.5" PointY="104.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.WorkflowComment" Width="1.5" PointX="21" PointY="105.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="StepPointWFModel.WorkflowDelegation" Width="1.5" PointX="10.5" PointY="90.625" IsExpanded="true" />
+        <AssociationConnector Association="StepPointWFModel.FK_Action_SecurityRole_MailTemplate_ActionsNotification" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Action_Step_MailTemplate_ActionsNotification" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Condtion_lkup_MatchingCritria" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Condtion_StepRequiredItem" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_Condtion_Condtion" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepRequiredItem_CustomFieldType" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowDelegation_DelegationScope" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_Condtion_FlowLogic" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_lkup_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_Step2" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_Step3" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowDelegation_Lkup_DelegationApprovalStatus" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_SecurityMatrix_Lkup_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_LookUpListValue_LookupList" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepRequiredItem_LookupList" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Object_Step_StepRequiredItem_LookUpListValue" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Phase_Workflow" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_lkup_Phase" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepRequiredItem_lkup_RequiredItemType" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_SecurityMatrix_lkup_SecurityRole" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_lkup_SecurityRole" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepType_Status_lkup_Status" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_lkup_StepType" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepType_Status_lkup_StepType" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Object_Step_StepRequiredItem" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectInstanceData_Workflow" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectStepHistory_Step" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectStepHistory_Workflow" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepCompletedItemHistory_ObjectStepHistory" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_Step" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_StepRequiredItem_Step" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_Workflow" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowComment_Step" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowDelegation_Step" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_StepRequiredItem_StepRequiredItem" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_Workflow_Attachment_Workflow" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowComment_Workflow" ManuallyRouted="false" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowDelegation_Workflow" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="StepPointWFModel.Attachment" Width="1.5" PointX="8.25" PointY="51.375" />
+        <AssociationConnector Association="StepPointWFModel.FK_Object_Step_StepRequiredItem_Attachment" />
+        <EntityTypeShape EntityType="StepPointWFModel.User" Width="1.5" PointX="6" PointY="64" />
+        <AssociationConnector Association="StepPointWFModel.FK_Action_SecurityRole_MailTemplate_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Action_SecurityRole_MailTemplate_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_Action_Step_MailTemplate_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Action_Step_MailTemplate_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_ActionsNotification_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_ActionsNotification_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_Attachment_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Attachment_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_Condtion_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Condtion_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_CustomFieldType_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_CustomFieldType_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_DelegationScope_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_DelegationScope_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_Condtion_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogic_Condtion_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogicRequiredItem_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_FlowLogicRequiredItem_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_ItemSubmittionHistory_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_ItemSubmittionHistory_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_DelegationStatus_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_DelegationStatus_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Group_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Group_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_User_Lkup_Group" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_JobTitle_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_JobTitle_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_User_lkup_JobTitle" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Language_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Language_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_LookupList_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_LookupList_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_LookUpListValue_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_LookUpListValue_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_MailTemplate_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_MailTemplate_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_MatchingCritria_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_MatchingCritria_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Path_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Path_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Phase_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Phase_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_RequiredItemType_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_RequiredItemType_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_SecurityRole_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_SecurityRole_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Status_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_Status_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_StepType_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_StepType_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_SubmittionStatus_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_SubmittionStatus_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_TimeOutStatus_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_TimeOutStatus_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_Object_Step_StepRequiredItem_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Object_Step_StepRequiredItem_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectInstanceData_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectInstanceData_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectInstanceData_CurrentSteps_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectInstanceData_CurrentSteps_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectStepHistory_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_ObjectStepHistory_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_WorkflowType_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_lkup_WorkflowType_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_User_lkup_WorkflowType" />
+        <AssociationConnector Association="StepPointWFModel.FK_SecurityMatrix_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_SecurityMatrix_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_StepRequiredItem_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Step_StepRequiredItem_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepCompletedItemHistory_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepCompletedItemHistory_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepRequiredItem_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_StepRequiredItem_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_Object_Attachment_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Object_Attachment_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_User_User2" />
+        <AssociationConnector Association="StepPointWFModel.FK_Workflow_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_Workflow_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowComment_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowComment_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowDelegation_User" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowDelegation_User1" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowDelegation_User2" />
+        <AssociationConnector Association="StepPointWFModel.FK_WorkflowDelegation_User3" />
+        </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

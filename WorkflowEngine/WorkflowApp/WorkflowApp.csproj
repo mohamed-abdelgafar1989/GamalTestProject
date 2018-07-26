@@ -1,0 +1,379 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E84C0E56-7F62-414F-9B24-FF12C950FDCC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WorkflowApp</RootNamespace>
+    <AssemblyName>WorkflowApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Data.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Web.v17.1, Version=17.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
+      <HintPath>..\packages\DevExpress.Web.v17.1.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AI.Agent.Intercept, Version=1.2.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.1\lib\net45\Microsoft.AI.Agent.Intercept.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.DependencyCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.DependencyCollector.2.0.0\lib\net45\Microsoft.AI.DependencyCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.PerfCounterCollector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.PerfCounterCollector.2.0.0\lib\net45\Microsoft.AI.PerfCounterCollector.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.ServerTelemetryChannel, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.2.0.0\lib\net45\Microsoft.AI.ServerTelemetryChannel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.Web.2.0.0\lib\net45\Microsoft.AI.Web.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.AI.WindowsServer, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.WindowsServer.2.0.0\lib\net45\Microsoft.AI.WindowsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationInsights, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.2.0.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Properties\DataSources\System.Data.DataTable.datasource" />
+    <None Include="Service References\SR_Service\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SR_Service\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SR_Service\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\SR_Service\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Site.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Images\1-SubmitArabic.png" />
+    <Content Include="Assets\Images\1-SubmitArabic_20.png" />
+    <Content Include="Assets\Images\10-ExportGOV2-60.png" />
+    <Content Include="Assets\Images\10-ExportGOV2.png" />
+    <Content Include="Assets\Images\10-ExportGOV60.png" />
+    <Content Include="Assets\Images\11-Workflow.png" />
+    <Content Include="Assets\Images\11-Workflow60.png" />
+    <Content Include="Assets\Images\12-TaskCompleted.png" />
+    <Content Include="Assets\Images\13-TaskNotStarted.png" />
+    <Content Include="Assets\Images\14-TaskOngoing.png" />
+    <Content Include="Assets\Images\15-DelegationApproved.png" />
+    <Content Include="Assets\Images\15-TaskPostponed.png" />
+    <Content Include="Assets\Images\15-TaskPostponed_20.png" />
+    <Content Include="Assets\Images\16-DelegationReject.png" />
+    <Content Include="Assets\Images\16-TaskDelegated.png" />
+    <Content Include="Assets\Images\17-TerminateDelegation.png" />
+    <Content Include="Assets\Images\18-TaskOnTime.png" />
+    <Content Include="Assets\Images\19-TaskDelayed.png" />
+    <Content Include="Assets\Images\2-Delegation Round_20.png" />
+    <Content Include="Assets\Images\2-Delegation.png" />
+    <Content Include="Assets\Images\20-DelegationInfo.png" />
+    <Content Include="Assets\Images\20-TaskTimeOut.png" />
+    <Content Include="Assets\Images\21-DocumentWFNotStarted.png" />
+    <Content Include="Assets\Images\22-DocumentPreparing.png" />
+    <Content Include="Assets\Images\23-DocumentPendingFirstApproval.png" />
+    <Content Include="Assets\Images\24-DocumentPendingSecondApproval.png" />
+    <Content Include="Assets\Images\25-DocumentPendingCreatorReview.png" />
+    <Content Include="Assets\Images\26-DocumentPendingThirdApproval.png" />
+    <Content Include="Assets\Images\27-DocumentApproved.png" />
+    <Content Include="Assets\Images\28-DocumentRejected.png" />
+    <Content Include="Assets\Images\29-DocumentAddNewItem.png" />
+    <Content Include="Assets\Images\3-StepNotes.png" />
+    <Content Include="Assets\Images\3-StepNotes_20.png" />
+    <Content Include="Assets\Images\3-StepNotes_SQ.png" />
+    <Content Include="Assets\Images\30-TerminateDelegationRequest.png" />
+    <Content Include="Assets\Images\31-CreateNewWFCycle.png" />
+    <Content Include="Assets\Images\32-Escalate.png" />
+    <Content Include="Assets\Images\33-DoneByDelegate.png" />
+    <Content Include="Assets\Images\34-AttachmentSubmissionHistory.png" />
+    <Content Include="Assets\Images\35-FormSubmissionHistory.png" />
+    <Content Include="Assets\Images\36-Collapse.png" />
+    <Content Include="Assets\Images\36-WFAttachments.png" />
+    <Content Include="Assets\Images\37-Expand.png" />
+    <Content Include="Assets\Images\4-PartialFlowchart.png" />
+    <Content Include="Assets\Images\4-PartialFlowchart_20.png" />
+    <Content Include="Assets\Images\5-StepHistory.png" />
+    <Content Include="Assets\Images\5-StepHistory_20.png" />
+    <Content Include="Assets\Images\6-FileDirectory.png" />
+    <Content Include="Assets\Images\6-FileDirectory_20.png" />
+    <Content Include="Assets\Images\7-PrintArabic.png" />
+    <Content Include="Assets\Images\7-PrintArabic60.png" />
+    <Content Include="Assets\Images\7-PrintEnglish.png" />
+    <Content Include="Assets\Images\7-PrintEnglish60.png" />
+    <Content Include="Assets\Images\8-ExportPDF.png" />
+    <Content Include="Assets\Images\8-ExportXLS.png" />
+    <Content Include="Assets\Images\9-RestartWorkflow60.png" />
+    <Content Include="Assets\Images\All Notes.PNG" />
+    <Content Include="Assets\Images\Approved.png" />
+    <Content Include="Assets\Images\Approved_bk.png" />
+    <Content Include="Assets\Images\Attchments.png" />
+    <Content Include="Assets\Images\Blank.png" />
+    <Content Include="Assets\Images\Comments.png" />
+    <Content Include="Assets\Images\Comments_20.png" />
+    <Content Include="Assets\Images\Completed.PNG" />
+    <Content Include="Assets\Images\delegated_2.png" />
+    <Content Include="Assets\Images\delegated_3.png" />
+    <Content Include="Assets\Images\Delegation2.png" />
+    <Content Include="Assets\Images\Delegation3.png" />
+    <Content Include="Assets\Images\Delegation4.png" />
+    <Content Include="Assets\Images\Delegation_20.png" />
+    <Content Include="Assets\Images\Diagram.PNG" />
+    <Content Include="Assets\Images\Diagram_20.png" />
+    <Content Include="Assets\Images\Diagram_20_.png" />
+    <Content Include="Assets\Images\Diagram_5.png" />
+    <Content Include="Assets\Images\Diagram_6.png" />
+    <Content Include="Assets\Images\Doc2.png" />
+    <Content Include="Assets\Images\Document Review.png" />
+    <Content Include="Assets\Images\DonebyDelegate.png" />
+    <Content Include="Assets\Images\FirstApproval.png" />
+    <Content Include="Assets\Images\Froms.png" />
+    <Content Include="Assets\Images\Go_.png" />
+    <Content Include="Assets\Images\History.png" />
+    <Content Include="Assets\Images\History_20.png" />
+    <Content Include="Assets\Images\images.png" />
+    <Content Include="Assets\Images\imagesHELILWEB.png" />
+    <Content Include="Assets\Images\imagesS7WWYEDR.png" />
+    <Content Include="Assets\Images\Inprogress.PNG" />
+    <Content Include="Assets\Images\Inprogress2.png" />
+    <Content Include="Assets\Images\Inprogress3.png" />
+    <Content Include="Assets\Images\ItemNotSelected.png" />
+    <Content Include="Assets\Images\ItemSelected.png" />
+    <Content Include="Assets\Images\load7.gif" />
+    <Content Include="Assets\Images\loader.gif" />
+    <Content Include="Assets\Images\Minus.png" />
+    <Content Include="Assets\Images\NA.gif" />
+    <Content Include="Assets\Images\New_Item.png" />
+    <Content Include="Assets\Images\New_Item2.png" />
+    <Content Include="Assets\Images\Not Started Yet--.png" />
+    <Content Include="Assets\Images\Not Started Yet.Png" />
+    <Content Include="Assets\Images\Not Started Yet_bk.Png" />
+    <Content Include="Assets\Images\Not Started.PNG" />
+    <Content Include="Assets\Images\Notes_Small.png" />
+    <Content Include="Assets\Images\OtherAttchements_20.png" />
+    <Content Include="Assets\Images\PAI Diagram.png" />
+    <Content Include="Assets\Images\PAILogo1.gif" />
+    <Content Include="Assets\Images\PAILogo2.gif" />
+    <Content Include="Assets\Images\PAILogo2.gif.jpg" />
+    <Content Include="Assets\Images\Pending Creator Review.png" />
+    <Content Include="Assets\Images\Pending Creator Review_bk.png" />
+    <Content Include="Assets\Images\Pending First Approval.png" />
+    <Content Include="Assets\Images\Pending First Approval_bk.png" />
+    <Content Include="Assets\Images\Pending Second Approval.png" />
+    <Content Include="Assets\Images\Pending Second Approval_bk.png" />
+    <Content Include="Assets\Images\Plus.png" />
+    <Content Include="Assets\Images\Print.png" />
+    <Content Include="Assets\Images\progress.gif" />
+    <Content Include="Assets\Images\Rejected.png" />
+    <Content Include="Assets\Images\Rejected_bk.png" />
+    <Content Include="Assets\Images\Restart.png" />
+    <Content Include="Assets\Images\Restart2.png" />
+    <Content Include="Assets\Images\Restart3.png" />
+    <Content Include="Assets\Images\RestartWF.png" />
+    <Content Include="Assets\Images\rrr.png" />
+    <Content Include="Assets\Images\Second Approval.png" />
+    <Content Include="Assets\Images\Sending File.png" />
+    <Content Include="Assets\Images\Sending File_bk.png" />
+    <Content Include="Assets\Images\Storage_Small.PNG" />
+    <Content Include="Assets\Images\Submit.png" />
+    <Content Include="Assets\Images\Submit2.png" />
+    <Content Include="Assets\Images\Submit_2.png" />
+    <Content Include="Assets\Images\Submit_20.png" />
+    <Content Include="Assets\Images\Terminate.png" />
+    <Content Include="Assets\Images\Text.png" />
+    <Content Include="Assets\Images\WF_Methdology.png" />
+    <Content Include="Global.asax" />
+    <Content Include="PopUps\UpdateCustomField.aspx" />
+    <Content Include="scripts\ai.0.22.9-build00167.js" />
+    <Content Include="scripts\ai.0.22.9-build00167.min.js" />
+    <Content Include="WorkflowHome.aspx" />
+    <None Include="Service References\SR_Service\Service.disco" />
+    <None Include="Service References\SR_Service\configuration91.svcinfo" />
+    <None Include="Service References\SR_Service\configuration.svcinfo" />
+    <None Include="Service References\SR_Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="TestPage.aspx" />
+    <Content Include="Web.config" />
+    <None Include="Service References\SR_Service\Service.wsdl" />
+    <Content Include="Service References\SR_Service\WorkflowApp.SR_Service.lkup_JobTitle.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="PopUps\UpdateCustomField.aspx.cs">
+      <DependentUpon>UpdateCustomField.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PopUps\UpdateCustomField.aspx.designer.cs">
+      <DependentUpon>UpdateCustomField.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\SR_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TestPage.aspx.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TestPage.aspx.designer.cs">
+      <DependentUpon>TestPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+    <Compile Include="WorkflowHome.aspx.cs">
+      <DependentUpon>WorkflowHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WorkflowHome.aspx.designer.cs">
+      <DependentUpon>WorkflowHome.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Code\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Assets\AppPages\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\SR_Service\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65044</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1989/Techno Products/WorkflowEngine/WorkflowApp</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.1.0.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0\build\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
